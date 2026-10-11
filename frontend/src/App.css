@@ -1,0 +1,85 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: system-ui, Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+.container { max-width: 900px; margin: 0 auto; padding: 24px 16px; }
+
+header h1 { margin: 0 0 4px; }
+header { margin-bottom: 20px; }
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.card h2 { margin: 0 0 14px; font-size: 18px; }
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+}
+label { display: block; font-size: 14px; }
+input, select {
+    display: block;
+    width: 100%;
+    margin-top: 4px;
+    padding: 8px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    background: white;
+}
+.buttons { margin-top: 14px; display: flex; gap: 8px; }
+
+button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #0f766e;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+button:disabled { opacity: 0.6; cursor: default; }
+button.secondary { background: #e2e8f0; color: #1e293b; }
+button.danger { background: #dc2626; }
+button.small { padding: 4px 10px; font-size: 13px; }
+
+.alert { padding: 10px 14px; border-radius: 6px; margin-bottom: 16px; }
+.alert.error { background: #fee2e2; color: #991b1b; }
+.alert.success { background: #dcfce7; color: #166534; }
+
+.muted { color: #64748b; }
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+}
+.summary-item {
+    background: #f8fafc;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.summary-item.total { background: #0f766e; color: white; }
+
+.list-header { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.list-header select { width: auto; margin: 0; }
+
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th, td { text-align: left; padding: 8px; border-bottom: 1px solid #e2e8f0; font-size: 14px; }
+.right { text-align: right; }
+.nowrap { white-space: nowrap; }
+.tag { background: #ccfbf1; color: #115e59; padding: 2px 8px; border-radius: 10px; font-size: 12px; }
